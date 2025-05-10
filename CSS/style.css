@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans";
+  background: url(/source/anime-moon-landscape.jpg);
+  background-size: contain;
+  background-repeat:round;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 330px;
+  height: max-content;
+  min-height: 300px;
+  border-radius: 30px;  
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0 40px 50px #5553;
+  background: transparent;
+  backdrop-filter: blur(50px);
+}
+
+main form {
+  border: 1px solid rgb(151, 142, 142);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+main form input,
+main form button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 10px;
+  color:rgb(224, 226, 217)
+}
+
+main form {
+  opacity: 0.8;
+}
+
+input::placeholder{
+  color: rgb(39, 22, 22);
+  font-style: italic;
+  opacity: 0.5;
+}
+@keyframes easeIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#frontLayout {
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  animation: 2s easeIn;
+}
+
+.head {
+  color: rgb(87, 2, 87);
+  font-style: normal;
+  word-spacing: 2px;
+  text-shadow: 1px 2px 4px rgb(201, 171, 144);
+}
+
+#time{
+  color: rgb(101, 9, 9);
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#result {
+  display: none;
+  padding-top: 20px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: large;
+}
+
+.cityTemperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cityContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#skyCondition {
+  color: red;
+  font-size: 15px;
+}
+.cityLocation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 25% 10%;
+  color: gray;
+}
+.cityHumidity,
+.cityWindspeed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 25% 10%;
+  color: rgb(67, 65, 65);
+}
+
+.cityHumidity {
+  background-color: pink;
+}
+.cityWindspeed {
+  background-color: yellowgreen;
+}
+
+.heading {
+  color: rgb(160, 76, 51);
+}
+
+#hourlyReport {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-snap-type: x;
+  gap: 5px;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 147, 232, 1) 0%,
+    rgba(76, 197, 189, 1) 25%,
+    rgba(134, 219, 183, 1) 50%,
+    rgba(88, 176, 228, 1) 75%,
+    rgba(6, 140, 221, 1) 100%
+  );
+
+  border-radius: 100px;
+}
+#hourlyReportBox {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  gap:5px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 10px;
+  background-color: gainsboro;
+  padding: 10px;
+  border-radius: 20% 10%;
+  color: rgb(197, 32, 32);
+}
+#hourlySymbol{
+  color:rgba(230, 167, 8, 0.993);
+}
+#footer{
+  font-size: 8px;
+  color: darkmagenta;
+}
+
+
