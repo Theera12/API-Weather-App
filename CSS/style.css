@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Gill Sans";
-  background: url(/source/anime-moon-landscape.jpg);
+  background: url(../source/anime-moon-landscape.jpg);
   background-size: contain;
   background-repeat:round;
 }
