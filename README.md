@@ -2,7 +2,7 @@
 A simple weather application that displays current weather conditions and hourly weather condition for a given location.  This app uses open-meteo API. 'https://open-meteo.com/en/docs'
 ## Installation
 
-1. Clone the repository: `git clone <repository_url>`
+1. Clone the repository: `git clone <https://theera12.github.io/API-Weather-App/>`
 
 ## Usage
 
